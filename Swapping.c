@@ -23,7 +23,8 @@ int main(int argc, char* argv[]){
 
         /* for integer values:
         int a = strtol(argv[1], NULL, 0);
-   	int b = strtol(argv[2], NULL, 0); */
+   	    int b = strtol(argv[2], NULL, 0); */
+
    	
    	printf("a equals %f & b equals %f\n", a, b);
    	
