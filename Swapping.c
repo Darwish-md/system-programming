@@ -1,12 +1,14 @@
 #include<stdio.h>
 #include <stdlib.h> 
 
-void swap(float *a, float *b){
-    *a = *a - *b;   
+// x and y are pointers to a and b 
+// so it's like float *x = &a and we change the value of a by *x
+void swap(float *x, float *y){ 
+    *x = *x - *y;   
  
-    *b = *a + *b;
+    *y = *x + *y;
 
-    *a = *b - *a;
+    *x = *y - *x;
     
     return;
 }
