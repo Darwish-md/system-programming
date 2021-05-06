@@ -25,7 +25,11 @@ int main(int argc, char* argv[]){
 
         /* for integer values:
         int a = strtol(argv[1], NULL, 0);
-   	    int b = strtol(argv[2], NULL, 0); */
+   	  int b = strtol(argv[2], NULL, 0); */
+      /* for strings: we cannot assign so we use strcpy
+         char x[20]; // char *x; doesn't work
+         strcpy(x, argv[1]);
+      */
 
    	
    	printf("a equals %f & b equals %f\n", a, b);
