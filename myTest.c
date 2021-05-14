@@ -45,30 +45,25 @@ int main(int argc, char argv[]){
 	int i, sum = 0;
 
 	/*
-
 	for(i=0;i<10;i++){
-		arr[i] = i;
+	     	 arr[i] = i;
 	}
-  
 	int f = open("nums.txt",O_CREAT|O_WRONLY|O_TRUNC,S_IRUSR|S_IWUSR|S_IXUSR|S_IRGRP|S_IROTH); 
-
-  write(f,arr,10*sizeof(int)); 
-  close(f); 
-
+        write(f,arr,10*sizeof(int)); 
+        close(f); 
    	*/
 
-   f = open("nums.txt",O_RDONLY);
-   int n = read(f,arr,10*sizeof(int));
+   	f = open("nums.txt",O_RDONLY);
+  	 int n = read(f,arr,10*sizeof(int)); //returns number of bytes read from file.
   
-   for(i=0;i<10;i++){
-     printf("%d\n", arr[i]);
-     sum += arr[i]; 
-   }
+   	for(i=0;i<10;i++){
+     		printf("%d\n", arr[i]);
+     		sum += arr[i]; 
+   	}
 
-		printf("The sum equals: %d\n", sum);			
-    close(f); 
-
-	  return 0;
+	printf("The sum equals: %d\n", sum);			
+    	close(f); 
+	return 0;
 
 }
 
