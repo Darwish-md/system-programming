@@ -167,9 +167,9 @@ return value in decimal: 21263
 
 unsigned int swap(unsigned int *N){
 
-	unsigned int first_half = (3923<<16);
+	unsigned int first_half = (*N<<16);
 	//printf("%u\n", first_half);
-	unsigned int second_half = (3923>>16);
+	unsigned int second_half = (*N>>16);
 	//printf("%u\n", second_half);
 	 *N = first_half | second_half;
 	 return *N;
